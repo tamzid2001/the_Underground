@@ -1,14 +1,14 @@
 a = raw_input("string, plz: ")
 b = raw_input("char, plz: ")
 count = 0
-occ = False
+occ = True
 
 for x in a:
     if b == x:
         print count
-        occ = True
+        occ = False
     else:
         count = count + 1
 
-if not(occ):
+if occ:
     print "no occurences"
