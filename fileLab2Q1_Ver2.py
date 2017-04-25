@@ -7,4 +7,5 @@ def greater_word(word1, word2):
     else:
         return word2
 
-print reduce(greater_word, txt.read().split())
+newtxt = map(lambda s: s.strip('!?.,;:'), txt.read().split())
+print reduce(greater_word, newtxt)
