@@ -13,4 +13,5 @@ def pelliDynamic(n):
     return L[n]
 
 n = int(raw_input(": "))
-print pelliSeq(n)
+#print pelli(n)
+print pelliDynamic(n)
