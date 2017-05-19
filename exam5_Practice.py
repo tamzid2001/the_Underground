@@ -26,7 +26,8 @@ for key in pref:
 L = [ ]
 for key in pref:
     L.append(pref[key][0])
-print "most preferred school:", ','.join(set(filter(lambda x: x == max(set(L), key = L.count), L)))
+m = max(set(L), key = L.count)
+print ', '.join(set(filter(lambda x: L.count(x) == L.count(m), L)))
 
 #c.
 print "Stuy, count:", L.count('Stuy')
