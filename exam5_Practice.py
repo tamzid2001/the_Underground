@@ -35,6 +35,7 @@ print "Stuy, count:", L.count('Stuy')
 print "Jill, 2nd pref:", pref['Jill'][1]
 
 #e.
+x = min(set(L), key = L.count)
 for key in pref:
-    pref[key] = pref[key][:-1]
+    pref[key].remove(x)
 print "new dict:", pref
